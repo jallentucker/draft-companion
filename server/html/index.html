@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Draft Companion</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body style="background-color:#000000">
+  <script type="text/x-handlebars">
+		<div class="container">
+		    <nav class="row">
+		        <div class="col-sm-6 col-sm-offset-3">
+		          <ul class="nav nav-tabs nav-justified">
+			        	<li>{{#link-to "index"}}Home{{/link-to}}</li>
+		    	    	<li>{{#link-to "about"}}About{{/link-to}}</li>
+		        	</ul>
+		        </div>
+		    </nav>
+
+				{{outlet}}
+
+		    <footer class="row">
+		        <p><a href="http://www.joshuatuckerpdx.com"><small>joshuatuckerpdx.com</small></a></p>
+		    </footer>
+		</div>
+	</script>
+
+	<script type="text/x-handlebars" id="components/single-player">
+		{{name}} (ADP: {{adp}})
+	</script>
+
+	<script type="text/x-handlebars" data-template-name="index">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 splash">
+				<h2>Best Players to Draft</h2>
+				{{#each}}
+					{{#single-player name=name adp=adp}}
+					{{/single-player}}
+				{{/each}}
+			</div>
+		</div>
+	</script>
+
+	<script type="text/x-handlebars" data-template-name="about">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 splash">
+				<h2>What is Draft Companion?</h2>
+				<h4>Draft Companion is a little program I wrote to help me conduct my fantasy baseball drafts.</h4>
+			</div>
+		</div>
+	</script>
+
+	<script src="js/libs/jquery-1.10.2.js"></script>
+	<script src="js/libs/handlebars-1.1.2.js"></script>
+	<script src="js/libs/ember.min.js"></script>
+	<script src="js/libs/ember-data.js"></script>
+	<script src="js/libs/localstorage_adapter.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>
