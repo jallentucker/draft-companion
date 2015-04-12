@@ -8,6 +8,8 @@
 		"url": "http://www.joshuatuckerpdx.com"
 	},
 	"dependencies": {
-		"express": "*"
+		"browserify-fs": "*",
+		"express": "*",
+		"lodash": "*"
 	}
 }
