@@ -11806,7 +11806,6 @@
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],2:[function(require,module,exports){
-// var fs = require('browserify-fs');
 var _ = require('lodash');
 
 App = Ember.Application.create();

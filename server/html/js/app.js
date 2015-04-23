@@ -1,4 +1,3 @@
-// var fs = require('browserify-fs');
 var _ = require('lodash');
 
 App = Ember.Application.create();
