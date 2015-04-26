@@ -1,5 +1,0 @@
-1	Mike Trout, LAA	CF	1.2	+0	51.3	-0.1	100.0
-2	Andrew McCutchen, Pit	CF	3.2	+0	44.5	+0.3	100.0
-3	Clayton Kershaw, LAD	SP	3.4	+0.1	44.3	+0.1	100.0
-4	Giancarlo Stanton, Mia	RF	3.4	+0	45.0	+0	100.0
-5	Paul Goldschmidt, Ari	1B	5.6	+0	40.3	+0.1	100.0
